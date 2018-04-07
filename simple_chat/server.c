@@ -91,16 +91,7 @@ int main()
 		printf("Acccepting the client...\n");
 
 	msg(connfd);
-	 int flag = 1;
-   	 while(flag) {
-     		 char dat[256];
-     		 bzero(dat, MAX);
-       		 scanf("%s", dat);
-       		 send(new_socket , dat , strlen(dat) , 0 );
-	if (dat[0]=='a') {
-           flag=0;
-       }
-    }
+
 	close(sockfd);
 
 	}
